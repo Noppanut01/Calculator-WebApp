@@ -19,17 +19,19 @@ body {
   height: 100vh;
 }
 .container {
-  width: 330px;
-  height: 600px;
+  width: 340px;
+  height: 610px;
   background-color: rgba(40, 40, 39, 0.9);
   border-radius: 10px;
+  border: 2px var(--gray) solid;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px var(--gray);
 }
 .display {
   width: 330px;
@@ -39,11 +41,8 @@ body {
 }
 .output {
   position: absolute;
-  /* width: 100%; */
   padding: 1rem;
-  /* text-align: right; */
-  /* height: 100%; */
-  font-size: 4rem;
+  font-size: 3.5rem;
   bottom: 0px;
   right: 0px;
 }
@@ -51,14 +50,14 @@ body {
   display: flex;
 }
 .num {
-  margin: 2px;
+  margin: 3px;
 }
 input[type="button"] {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  border: none;
-  font-size: 2rem;
+  border: 1px var(--lightgray) solid;
+  font-size: 1.75rem;
   color: white;
 }
 
