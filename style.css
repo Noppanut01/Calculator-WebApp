@@ -1,0 +1,71 @@
+:root {
+  --lightgray: rgb(113, 113, 112);
+  --gray: rgb(82, 82, 81);
+  --orange: rgb(241, 154, 55);
+}
+@font-face {
+  font-family: kanit;
+  src: url(Kanit/Kanit-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: kanit;
+}
+html,
+body {
+  height: 100vh;
+}
+.container {
+  width: 330px;
+  height: 600px;
+  background-color: rgba(40, 40, 39, 0.9);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.display {
+  width: 330px;
+  height: 200px;
+  color: white;
+}
+.output {
+  position: relative;
+  padding: 1rem;
+  text-align: right;
+  /* top: 130px; */
+  /* background-color: red; */
+  height: 100%;
+  font-size: 4rem;
+}
+.flex {
+  display: flex;
+}
+.num {
+  margin: 2px;
+}
+input[type="button"] {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.lightgray {
+  background-color: var(--lightgray);
+}
+.gray {
+  background-color: var(--gray);
+}
+.orange {
+  background-color: var(--orange);
+}
